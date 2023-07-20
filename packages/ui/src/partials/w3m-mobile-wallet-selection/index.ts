@@ -36,7 +36,8 @@ export class W3mMobileWalletSelection extends LitElement {
     templates = templates.filter(Boolean)
 
     const isViewAll = templates.length > 8 || isExplorerWallets
-    let wallets = []
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let wallets: any[] = []
     if (isViewAll) {
       wallets = templates.slice(0, 7)
     } else {
@@ -47,7 +48,7 @@ export class W3mMobileWalletSelection extends LitElement {
 
     return html`
       <w3m-modal-header
-        title="Connect your wallet"
+        title="Connect your Mobile wallet"
         .onAction=${this.onQrcode}
         .actionIcon=${SvgUtil.QRCODE_ICON}
         data-testid="partial-mobile-wallet-selection-header"

@@ -1,4 +1,4 @@
-import type { W3mCoreButton } from '@web3modal/ui'
+import type { W3mCoreButton } from '@pixels_xyz/ui'
 import React from 'react'
 
 /**

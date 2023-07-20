@@ -1,3 +1,4 @@
+/* eslint-disable lit/binding-positions */
 import { CoreUtil, ExplorerCtrl, RouterCtrl } from '@web3modal/core'
 import { LitElement, html } from 'lit'
 import { customElement } from 'lit/decorators.js'
@@ -16,10 +17,6 @@ export class W3mAndroidWalletSelection extends LitElement {
     RouterCtrl.push('Qrcode')
   }
 
-  private onGetWallet() {
-    RouterCtrl.push('GetWallet')
-  }
-
   // -- render ------------------------------------------------------- //
   protected render() {
     const { recomendedWallets } = ExplorerCtrl.state
@@ -31,7 +28,7 @@ export class W3mAndroidWalletSelection extends LitElement {
 
     return html`
       <w3m-modal-header
-        title="Connect your wallet"
+        title="Connect your Android wallet"
         .onAction=${this.onGoToQrcode}
         .actionIcon=${SvgUtil.QRCODE_ICON}
       ></w3m-modal-header>
@@ -83,14 +80,6 @@ export class W3mAndroidWalletSelection extends LitElement {
             isOther ? ', or select from other options' : ''
           }`}
         </w3m-text>
-
-        <w3m-button
-          variant="outline"
-          .iconRight=${SvgUtil.ARROW_UP_RIGHT_ICON}
-          .onClick=${() => this.onGetWallet()}
-          data-testid="partial-android-nowallet-button"
-          >I don't have a wallet</w3m-button
-        >
       </w3m-info-footer>
     `
   }

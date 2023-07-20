@@ -32,7 +32,8 @@ export class W3mDesktopWalletSelection extends LitElement {
     templates = templates.filter(Boolean)
 
     const isViewAll = templates.length > 4 || isExplorerWallets
-    let wallets = []
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let wallets: any[] = []
     if (isViewAll) {
       wallets = templates.slice(0, 3)
     } else {
@@ -43,7 +44,7 @@ export class W3mDesktopWalletSelection extends LitElement {
     return html`
       <w3m-modal-header
         .border=${true}
-        title="Connect your wallet"
+        title="Connect your PIXEL wallet"
         .onAction=${UiUtil.handleUriCopy}
         .actionIcon=${SvgUtil.COPY_ICON}
         data-testid="partial-desktop-wallet-selection-header"

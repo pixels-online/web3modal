@@ -5,7 +5,7 @@ import {
   useWeb3Modal,
   useWeb3ModalEvents,
   useWeb3ModalTheme
-} from '@web3modal/react'
+} from '@pixels_xyz/react'
 import { useAccount, useNetwork, useSignMessage, useSignTypedData } from 'wagmi'
 import { NotificationCtrl } from '../controllers/NotificationCtrl'
 import { DEMO_SIGN_TYPED_DATA_REQUEST } from '../data/Constants'

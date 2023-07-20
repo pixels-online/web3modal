@@ -22,7 +22,7 @@ function CreateWeb3Modal({ ethereumClient, ...config }: Web3ModalProps) {
       ClientCtrl.setEthereumClient(ethereumClient)
     }
     ConfigCtrl.setConfig(config)
-    await import('@web3modal/ui')
+    await import('@pixels_xyz/ui')
     OptionsCtrl.setIsUiLoaded(true)
   }, [ethereumClient, config])
 

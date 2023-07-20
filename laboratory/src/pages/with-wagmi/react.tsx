@@ -1,5 +1,5 @@
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
-import { Web3Modal } from '@web3modal/react'
+import { Web3Modal } from '@pixels_xyz/react'
 import { WagmiConfig, configureChains, createConfig } from 'wagmi'
 import {
   arbitrum,

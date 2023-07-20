@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <NextUIProvider theme={createTheme({ type: dark ? 'dark' : 'light' })}>
           <Link href="/" css={{ margin: '30px auto 0', display: 'block' }}>
             <Text h2 color="success">
-              Web3Modal Lab
+              Pixels Web3Modal Lab
             </Text>
           </Link>
 

@@ -1,4 +1,4 @@
-import type { W3mModal } from '@web3modal/ui'
+import type { W3mModal } from '@pixels_xyz/ui'
 import React from 'react'
 
 /**

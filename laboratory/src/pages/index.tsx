@@ -6,14 +6,14 @@ const reactCards = [
     description: 'Wagmi playground',
     link: '/with-wagmi/react',
     color: 'secondary',
-    libraries: ['@web3modal/react', '@web3modal/ethereum', 'wagmi', 'viem']
+    libraries: ['@pixels_xyz/react', '@web3modal/ethereum', 'wagmi', 'viem']
   },
   {
     title: 'With Wagmi Themed',
     description: 'Wagmi playground with themed modal',
     link: '/with-wagmi/react-themed',
     color: 'secondary',
-    libraries: ['@web3modal/react', '@web3modal/ethereum', 'wagmi', 'viem']
+    libraries: ['@pixels_xyz/react', '@web3modal/ethereum', 'wagmi', 'viem']
   }
 ] as const
 

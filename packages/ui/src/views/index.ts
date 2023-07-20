@@ -1,7 +1,6 @@
 import './w3m-account-view'
 import './w3m-connect-wallet-view'
 import './w3m-desktop-connecting-view'
-import './w3m-get-wallet-view'
 import './w3m-help-view'
 import './w3m-injected-connecting-view'
 import './w3m-install-wallet-view'

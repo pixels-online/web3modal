@@ -24,12 +24,6 @@
 | w3m-desktop-connection-view | `view-desktop-connecting-footer` | Footer | `<w3m-modal-footer>`|
 | w3m-desktop-connection-view | `view-desktop-connecting-retry-button` | Retry failed connection | `<button>`|
 
-| Get Wallet View     | Id                     | Description          | Tag Type              |
-| ----------------------- | ---------------------- | -------------------- | --------------------- |
-| w3m-get-wallet-view | `view-get-wallet-${wallet.id}` | Wallet content by id | `<div>` |
-| w3m-get-wallet-view | `view-get-wallet-button-${wallet.id}` | Select wallet by id button | `<w3m-button>` |
-| w3m-get-wallet-view | `view-get-wallet-explorer-button` | Open explorer button | `<w3m-button>` |
-
 | Injected Connecting View     | Id                     | Description          | Tag Type              |
 | ----------------------- | ---------------------- | -------------------- | --------------------- |
 | w3m-injected-connecting-view | `view-injected-header` | Header | `<w3m-modal-header>` |

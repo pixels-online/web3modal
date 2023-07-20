@@ -1,4 +1,4 @@
-import type { W3mQrCode as TW3mQrCode } from '@web3modal/ui'
+import type { W3mQrCode as TW3mQrCode } from '@pixels_xyz/ui'
 import React from 'react'
 
 /**

@@ -1,9 +1,8 @@
-import { ConfigCtrl, CoreUtil, RouterCtrl } from '@web3modal/core'
+import { CoreUtil } from '@web3modal/core'
 import { html, LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { SvgUtil } from '../../utils/SvgUtil'
 import { ThemeUtil } from '../../utils/ThemeUtil'
-import { UiUtil } from '../../utils/UiUtil'
 import styles from './styles.css'
 
 @customElement('w3m-help-view')
@@ -12,14 +11,6 @@ export class W3mHelpView extends LitElement {
 
   // -- private ------------------------------------------------------ //
   private readonly learnUrl = 'https://ethereum.org/en/wallets/'
-
-  private onGet() {
-    if (ConfigCtrl.state.enableExplorer) {
-      RouterCtrl.push('GetWallet')
-    } else {
-      UiUtil.openWalletExplorerUrl()
-    }
-  }
 
   private onLearnMore() {
     CoreUtil.openHref(this.learnUrl, '_blank')
@@ -61,9 +52,6 @@ export class W3mHelpView extends LitElement {
         </div>
 
         <div class="w3m-footer-actions">
-          <w3m-button .onClick=${this.onGet.bind(this)} .iconLeft=${SvgUtil.WALLET_ICON}>
-            Get a Wallet
-          </w3m-button>
           <w3m-button
             .onClick=${this.onLearnMore.bind(this)}
             .iconRight=${SvgUtil.ARROW_UP_RIGHT_ICON}
