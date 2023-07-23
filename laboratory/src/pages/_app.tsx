@@ -8,9 +8,12 @@ import { ShowLocalStorageButton } from '../components/ShowLocalStorageButton'
 import { SunIcon } from '../components/SunIcon'
 import Toast from '../components/Toast'
 import { getTheme } from '../utilities/EnvUtil'
-import { bootstrap as bootstrapSentry } from '../utilities/SentryUtil'
 
+import { bootstrap as bootstrapSentry } from '../utilities/SentryUtil'
 bootstrapSentry()
+
+import '../styles/googlefonts.css'
+import '../styles/global.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   const [ready, setReady] = useState(false)

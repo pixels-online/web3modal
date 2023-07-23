@@ -71,8 +71,15 @@ export default function WagmiWeb3ModalWidget() {
           ) : (
             <>
               <Button color="secondary" onPress={async () => open()}>
-                Custom Connect Button
+                Custom Connect Wallet Button
               </Button>
+
+              <button className="customConnectBtn" onClick={async () => open()}>
+                <div className="connectIcon">
+                  <img src={`/images/metamask.svg`} alt={'metamask'} />
+                </div>
+                <span className="connectText">Connect Mobile Wallet</span>
+              </button>
               <Spacer />
               <Button
                 css={{ backgroundColor: 'teal' }}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Press Start';
+  src: url('/assets/fonts/press-start-2p-v14-latin-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Kemco pixel';
+  src: url('/assets/fonts/kemco.ttf');
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('/assets/fonts/BeVietnamPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Depixel Klein';
+  src: url('/assets/fonts/depixelklein.ttf');
+}

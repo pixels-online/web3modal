@@ -1,0 +1,39 @@
+:root {
+  /* pixels primary color */
+  --pixel-purple: #622aff;
+  --pixel-yellow: #e3ff37;
+  --pixels-navy: #222044;
+  --pixel-black: #212121;
+}
+
+.customConnectBtn {
+  width: 256px;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+
+  padding: 2px 0;
+  margin: 1rem;
+
+  cursor: pointer;
+}
+
+.customConnectBtn:focus,
+.customConnectBtn:active {
+  outline: none;
+}
+
+.customConnectBtn .connectIcon > img {
+  width: 56px;
+  height: auto;
+  object-fit: contain;
+}
+
+.customConnectBtn .connectText {
+  text-align: center;
+  font-family: 'Kemco pixel', sans-serif;
+  font-size: 14px;
+}
