@@ -6,6 +6,6 @@
     "packages/react",
     "laboratory"
   ],
-  "version": "2.7.3",
+  "version": "2.7.4",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
