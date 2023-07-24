@@ -29,6 +29,7 @@ export interface ConfigCtrlState {
   defaultChain?: Chain
   mobileWallets?: MobileWallet[]
   desktopWallets?: DesktopWallet[]
+  supportedWallets?: string[]
   walletImages?: Record<string, string>
   chainImages?: Record<string, string>
   tokenImages?: Record<string, string>
@@ -40,6 +41,7 @@ export interface ConfigCtrlState {
   explorerExcludedWalletIds?: string[] | 'ALL'
   termsOfServiceUrl?: string
   privacyPolicyUrl?: string
+  hideDesktop?: boolean
 }
 
 // -- ModalCtrl --------------------------------------- //
