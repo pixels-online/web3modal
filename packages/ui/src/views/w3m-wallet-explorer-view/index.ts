@@ -1,4 +1,3 @@
-import type { Listing } from '@web3modal/core'
 import { CoreUtil, ExplorerCtrl, ToastCtrl } from '@web3modal/core'
 import { LitElement, html } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
@@ -89,14 +88,6 @@ export class W3mWalletExplorerView extends LitElement {
     }
   }
 
-  private onConnect(listing: Listing) {
-    if (CoreUtil.isAndroid()) {
-      UiUtil.handleMobileLinking(listing)
-    } else {
-      UiUtil.goToConnectingView(listing)
-    }
-  }
-
   private onSearchChange(event: Event) {
     const { value } = event.target as HTMLInputElement
     this.searchDebounce(value)
@@ -147,6 +138,8 @@ export class W3mWalletExplorerView extends LitElement {
         )
     )
 
+    // Show only supported wallets
+
     const isEmpty =
       !this.loading && !listings.length && !extensions.length && !recomendedWallets.length
     const iterator = Math.max(extensions.length, listings.length)
@@ -167,21 +160,7 @@ export class W3mWalletExplorerView extends LitElement {
           ${isLoading
             ? null
             : [...Array(iterator)].map(
-                (_, index) => html`
-                  ${manualWallets[index]} ${extensions[index]}
-                  ${listings[index]
-                    ? html`
-                        <w3m-wallet-button
-                          imageId=${listings[index].image_id}
-                          name=${listings[index].name}
-                          walletId=${listings[index].id}
-                          .onClick=${() => this.onConnect(listings[index])}
-                          data-testid="view-wallet-explorer-button-${listings[index].id}"
-                        >
-                        </w3m-wallet-button>
-                      `
-                    : null}
-                `
+                (_, index) => html` ${manualWallets[index]} ${extensions[index]} `
               )}
         </div>
         <div class="w3m-placeholder-block">

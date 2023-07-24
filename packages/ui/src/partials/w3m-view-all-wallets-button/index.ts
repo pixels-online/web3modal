@@ -1,4 +1,4 @@
-import { RouterCtrl } from '@web3modal/core'
+import { RouterCtrl, ExplorerCtrl } from '@web3modal/core'
 import { LitElement, html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { DataUtil } from '../../utils/DataUtil'
@@ -18,10 +18,9 @@ export class W3mViewAllWalletsButton extends LitElement {
 
   // -- render ------------------------------------------------------- //
   protected render() {
+    const { recomendedWallets } = ExplorerCtrl.state
     const manualWallets = DataUtil.manualWallets()
-    // eslint-disable-next-line no-console
-    console.log('manualWallets are: ', manualWallets)
-    const reversedWallets = [...manualWallets].reverse().slice(0, 4)
+    const reversedWallets = [...recomendedWallets, ...manualWallets].reverse().slice(0, 4)
 
     return html`
       <button @click=${this.onClick} data-testid="partial-all-wallets-button">

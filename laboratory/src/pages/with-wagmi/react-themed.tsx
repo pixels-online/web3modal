@@ -89,6 +89,7 @@ export default function WithWagmiReactThemedPage() {
           'OKX Wallet'
         ]}
         explorerRecommendedWalletIds={'NONE'}
+        hideDesktop={true}
       />
     </>
   )

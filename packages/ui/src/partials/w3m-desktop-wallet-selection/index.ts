@@ -13,17 +13,19 @@ export class W3mDesktopWalletSelection extends LitElement {
 
   // -- render ------------------------------------------------------- //
   protected render() {
-    const { explorerExcludedWalletIds, enableExplorer } = ConfigCtrl.state
+    const { explorerExcludedWalletIds, enableExplorer, hideDesktop } = ConfigCtrl.state
     const isExplorerWallets = explorerExcludedWalletIds !== 'ALL' && enableExplorer
     const manualTemplate = TemplateUtil.manualWalletsTemplate()
     const recomendedTemplate = TemplateUtil.recomendedWalletsTemplate()
     const externalTemplate = TemplateUtil.externalWalletsTemplate()
     const recentTemplate = TemplateUtil.recentWalletTemplate()
-    const injectedWallets = TemplateUtil.installedInjectedWalletsTemplate()
+    const installedInjectedWallets = TemplateUtil.installedInjectedWalletsTemplate()
+    const injectedWallets = TemplateUtil.injectedWalletsTemplate()
 
     let templates = [
-      ...injectedWallets,
+      ...installedInjectedWallets,
       recentTemplate,
+      ...injectedWallets,
       ...externalTemplate,
       ...manualTemplate,
       ...recomendedTemplate
@@ -44,7 +46,7 @@ export class W3mDesktopWalletSelection extends LitElement {
     return html`
       <w3m-modal-header
         .border=${true}
-        title="Connect your PIXEL wallet"
+        title="Connect your wallet"
         .onAction=${UiUtil.handleUriCopy}
         .actionIcon=${SvgUtil.COPY_ICON}
         data-testid="partial-desktop-wallet-selection-header"
@@ -65,7 +67,7 @@ export class W3mDesktopWalletSelection extends LitElement {
         <w3m-walletconnect-qr></w3m-walletconnect-qr>
       </w3m-modal-content>
 
-      ${isWallets
+      ${isWallets && !hideDesktop
         ? html`
             <w3m-modal-footer data-testid="partial-desktop-wallet-selection-footer">
               <div class="w3m-desktop-title">
