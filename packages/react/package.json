@@ -1,6 +1,6 @@
 {
   "name": "@pixels_xyz/react",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/_types/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@pixels_xyz/ui": "2.7.1",
+    "@pixels_xyz/ui": "2.7.2",
     "@web3modal/core": "2.7.0"
   },
   "devDependencies": {
