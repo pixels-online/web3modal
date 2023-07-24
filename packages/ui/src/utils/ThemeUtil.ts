@@ -1,4 +1,4 @@
-import { ThemeCtrl } from '@web3modal/core'
+import { ThemeCtrl } from '@pixels_xyz/core'
 import { css } from 'lit'
 
 function themeModeVariables() {

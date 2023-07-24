@@ -1,4 +1,4 @@
-import { AccountCtrl, ClientCtrl, OptionsCtrl, ToastCtrl, WcConnectionCtrl } from '@web3modal/core'
+import { AccountCtrl, ClientCtrl, OptionsCtrl, ToastCtrl, WcConnectionCtrl } from '@pixels_xyz/core'
 import { LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
 

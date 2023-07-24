@@ -1,4 +1,4 @@
-import { EventsCtrl } from '@web3modal/core'
+import { EventsCtrl } from '@pixels_xyz/core'
 import { html, LitElement } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { ThemeUtil } from '../../utils/ThemeUtil'

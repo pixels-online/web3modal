@@ -1,4 +1,4 @@
-import { AccountCtrl } from '@web3modal/core'
+import { AccountCtrl } from '@pixels_xyz/core'
 import { html, LitElement } from 'lit'
 import { customElement, property, state } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js'

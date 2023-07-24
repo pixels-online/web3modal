@@ -1,5 +1,5 @@
 /* eslint-disable lit/binding-positions */
-import { CoreUtil, ExplorerCtrl, RouterCtrl } from '@web3modal/core'
+import { CoreUtil, ExplorerCtrl, RouterCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { SvgUtil } from '../../utils/SvgUtil'

@@ -1,4 +1,4 @@
-import { ModalCtrl } from '@web3modal/core'
+import { ModalCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js'

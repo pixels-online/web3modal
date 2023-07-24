@@ -1,4 +1,4 @@
-import { EventsCtrl, ModalCtrl, OptionsCtrl } from '@web3modal/core'
+import { EventsCtrl, ModalCtrl, OptionsCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

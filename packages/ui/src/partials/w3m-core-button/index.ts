@@ -1,4 +1,4 @@
-import { AccountCtrl, ConfigCtrl } from '@web3modal/core'
+import { AccountCtrl, ConfigCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, property, state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

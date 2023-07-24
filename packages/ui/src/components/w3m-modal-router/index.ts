@@ -1,5 +1,5 @@
-import type { RouterView } from '@web3modal/core'
-import { RouterCtrl } from '@web3modal/core'
+import type { RouterView } from '@pixels_xyz/core'
+import { RouterCtrl } from '@pixels_xyz/core'
 import { html, LitElement } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { animate } from 'motion'

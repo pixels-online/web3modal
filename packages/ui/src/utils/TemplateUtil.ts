@@ -1,4 +1,4 @@
-import type { WalletData } from '@web3modal/core'
+import type { WalletData } from '@pixels_xyz/core'
 import { html } from 'lit'
 import { DataUtil } from './DataUtil'
 import { UiUtil } from './UiUtil'

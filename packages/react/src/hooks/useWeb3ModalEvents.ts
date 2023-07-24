@@ -1,5 +1,5 @@
-import type { ModalEvent } from '@web3modal/core'
-import { EventsCtrl } from '@web3modal/core'
+import type { ModalEvent } from '@pixels_xyz/core'
+import { EventsCtrl } from '@pixels_xyz/core'
 import { useEffect } from 'react'
 
 export function useWeb3ModalEvents(callback: (event: ModalEvent) => void) {

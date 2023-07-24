@@ -1,4 +1,4 @@
-import { ThemeCtrl } from '@web3modal/core'
+import { ThemeCtrl } from '@pixels_xyz/core'
 import { useEffect, useState } from 'react'
 
 export function useWeb3ModalTheme() {

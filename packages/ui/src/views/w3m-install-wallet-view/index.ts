@@ -1,4 +1,4 @@
-import { CoreUtil } from '@web3modal/core'
+import { CoreUtil } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { SvgUtil } from '../../utils/SvgUtil'

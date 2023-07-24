@@ -1,4 +1,4 @@
-import { ModalCtrl, OptionsCtrl } from '@web3modal/core'
+import { ModalCtrl, OptionsCtrl } from '@pixels_xyz/core'
 import { useEffect, useState } from 'react'
 
 export function useWeb3Modal() {

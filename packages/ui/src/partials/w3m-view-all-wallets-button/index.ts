@@ -1,4 +1,4 @@
-import { RouterCtrl, ExplorerCtrl } from '@web3modal/core'
+import { RouterCtrl, ExplorerCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { DataUtil } from '../../utils/DataUtil'

@@ -1,4 +1,4 @@
-import { WcConnectionCtrl } from '@web3modal/core'
+import { WcConnectionCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, property, state } from 'lit/decorators.js'
 import { ThemeUtil } from '../../utils/ThemeUtil'

@@ -1,4 +1,4 @@
-import type { WalletData } from '@web3modal/core'
+import type { WalletData } from '@pixels_xyz/core'
 import {
   ClientCtrl,
   ConfigCtrl,
@@ -9,7 +9,7 @@ import {
   RouterCtrl,
   ToastCtrl,
   WcConnectionCtrl
-} from '@web3modal/core'
+} from '@pixels_xyz/core'
 import type { LitElement } from 'lit'
 import { ChainPresets } from '../presets/ChainPresets'
 import { TokenPresets } from '../presets/TokenPresets'

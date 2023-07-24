@@ -1,5 +1,5 @@
-import type { ConfigCtrlState, ThemeCtrlState } from '@web3modal/core'
-import { ClientCtrl, ConfigCtrl, OptionsCtrl, ThemeCtrl } from '@web3modal/core'
+import type { ConfigCtrlState, ThemeCtrlState } from '@pixels_xyz/core'
+import { ClientCtrl, ConfigCtrl, OptionsCtrl, ThemeCtrl } from '@pixels_xyz/core'
 import type { EthereumClient } from '@web3modal/ethereum'
 import React, { memo, useCallback, useEffect } from 'react'
 import { Modal } from './Modal'

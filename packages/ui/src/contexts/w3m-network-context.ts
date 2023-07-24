@@ -1,4 +1,4 @@
-import { AccountCtrl, ClientCtrl, ConfigCtrl, OptionsCtrl, ToastCtrl } from '@web3modal/core'
+import { AccountCtrl, ClientCtrl, ConfigCtrl, OptionsCtrl, ToastCtrl } from '@pixels_xyz/core'
 import { LitElement } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { UiUtil } from '../utils/UiUtil'

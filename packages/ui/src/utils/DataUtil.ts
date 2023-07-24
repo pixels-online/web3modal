@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { ClientCtrl, ConfigCtrl, CoreUtil, ExplorerCtrl } from '@web3modal/core'
+import { ClientCtrl, ConfigCtrl, CoreUtil, ExplorerCtrl } from '@pixels_xyz/core'
 import { UiUtil } from './UiUtil'
 
 export const DataUtil = {

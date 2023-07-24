@@ -1,4 +1,4 @@
-import { ThemeCtrl } from '@web3modal/core'
+import { ThemeCtrl } from '@pixels_xyz/core'
 import { LitElement } from 'lit'
 import { customElement } from 'lit/decorators.js'
 import { ThemeUtil } from '../utils/ThemeUtil'

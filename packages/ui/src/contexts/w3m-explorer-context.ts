@@ -1,4 +1,4 @@
-import { ConfigCtrl, ExplorerCtrl, OptionsCtrl, ToastCtrl } from '@web3modal/core'
+import { ConfigCtrl, ExplorerCtrl, OptionsCtrl, ToastCtrl } from '@pixels_xyz/core'
 import { LitElement } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { DataUtil } from '../utils/DataUtil'

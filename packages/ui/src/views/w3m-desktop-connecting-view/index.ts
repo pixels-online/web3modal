@@ -1,4 +1,4 @@
-import { CoreUtil, WcConnectionCtrl } from '@web3modal/core'
+import { CoreUtil, WcConnectionCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { SvgUtil } from '../../utils/SvgUtil'

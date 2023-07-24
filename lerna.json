@@ -1,10 +1,11 @@
 {
   "npmClient": "npm",
   "packages": [
+    "packages/core",
     "packages/ui",
     "packages/react",
     "laboratory"
   ],
-  "version": "2.7.2",
+  "version": "2.7.3",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }

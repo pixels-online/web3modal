@@ -1,4 +1,4 @@
-import { ThemeCtrl } from '@web3modal/core'
+import { ThemeCtrl } from '@pixels_xyz/core'
 import { html, LitElement, svg } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js'

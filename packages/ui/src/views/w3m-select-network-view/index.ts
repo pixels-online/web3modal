@@ -1,4 +1,4 @@
-import type { SwitchNetworkData } from '@web3modal/core'
+import type { SwitchNetworkData } from '@pixels_xyz/core'
 import {
   AccountCtrl,
   ClientCtrl,
@@ -6,7 +6,7 @@ import {
   OptionsCtrl,
   RouterCtrl,
   ToastCtrl
-} from '@web3modal/core'
+} from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { ThemeUtil } from '../../utils/ThemeUtil'

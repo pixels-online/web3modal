@@ -1,4 +1,4 @@
-import { CoreUtil, RouterCtrl } from '@web3modal/core'
+import { CoreUtil, RouterCtrl } from '@pixels_xyz/core'
 import { LitElement, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { SvgUtil } from '../../utils/SvgUtil'
