@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { ClientCtrl, ConfigCtrl, CoreUtil, ExplorerCtrl } from '@pixels_xyz/core'
 import { UiUtil } from './UiUtil'
 
@@ -6,7 +5,6 @@ export const DataUtil = {
   externalWallets() {
     let connectors = ClientCtrl.client().getConnectors()
     connectors = connectors.filter(connector => connector.id !== 'injected')
-    console.log('[DataUtil] externalWallets: ', connectors)
 
     return connectors
   },
@@ -80,12 +78,10 @@ export const DataUtil = {
       )
     })
 
-    console.log('1. [DataUtil] injectedWallets: ', wallets)
     // Only show supported wallets
     if (supportedWallets?.length) {
       wallets = wallets.filter(({ name }) => supportedWallets.includes(name))
     }
-    console.log('2. [DataUtil] injectedWallets: ', wallets)
 
     return wallets
   },
